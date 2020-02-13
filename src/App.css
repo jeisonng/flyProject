@@ -1,3 +1,7 @@
+body{
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,101 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bottom-div{
+  background-color: rgb(0, 255, 204);
+  height: 4px;
+  width: 100%;
+  /* margin-bottom: -1px; */
+  margin-top: 3px;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.nav-container{
+  z-index: 99999999;
+  width: 100vw;
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  background-color: #282c34;
+  display: flex;
+}
+
+.icons{
+  flex:1;
+  
+}
+
+.icon{
+  width: 15px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+span{
+  color: aliceblue;
+  font-size: 10px;
+  text-align: center;
+  align-self: center;
+  margin: auto;
+}
+
+.card-style{
+  max-width: 300px;
+  width: 95vw;
+  height: 100px;
+  background-size: cover;
+  margin: auto;
+  border-radius: 3px;
+  background-color:gray;
+  animation: myDiv 5s 2;
+}
+
+@keyframes myDiv {
+  0%{background-color: honeydew;}
+  15%{background-color:gray;}
+  30%{background-color: honeydew;}
+  45%{background-color:gray;}
+  60%{background-color: honeydew;}
+  75%{background-color:gray;}
+  100%{background-color: honeydew;}
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.text-card{
+  z-index: 9999;
+  float: left;
+  margin-top: 75px;
+  margin-left: 3px;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.text-data-card{
+  z-index: 9999;
+  float: right;
+  margin-top: 80px;
+  margin-right: 1px;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+}
+
+.card-style-2{
+  max-width: 300px;
+  position: relative;
+    width: 95vw;
+    height: 100px;
+    background-size: cover;
+    margin: auto;
+    margin-top: -104px;
+    border-radius: 3px;
+    background-image: linear-gradient(2deg, #1a1a1a, transparent);
 }
